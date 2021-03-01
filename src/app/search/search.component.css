@@ -1,0 +1,73 @@
+:host {
+    position: absolute;
+    top: 8px;
+    right: 54px;
+    width: 635px;
+    transform: scaleX(0);
+    transition: all 0.4s;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+}
+
+input {
+    position: relative;
+    height: 34px;
+    font-size: 32px;
+    border: none;
+}
+
+input::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 3px;
+    width: 30px;
+    height: 30px;
+    background-image: url('../../assets/search.svg');
+}
+
+input::after {
+    content: "NHZV&#10006;";
+    /* position: absolute; */
+    color: darkgray;
+    right: 10px;
+    top: 3px;
+    font-size: 30px;
+}
+
+button {
+    height: 40px;
+    width: 80px;
+    color: white;
+    box-sizing: border-box;
+    font-size: 16px;
+    overflow: hidden;
+    background-color: orange;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#searchInInput {
+    background-image: url();
+    color: darkgray;
+}
+
+@media screen and (max-width: 414px) {
+    :host {
+        right: 0;
+        width: 100%;
+    }
+
+    input[type=text] {
+        width: 300px;
+    }
+}

@@ -1,0 +1,22 @@
+<header>
+    <div id="navigation">
+        <span id="hamburgerMenuIcon"></span>
+        <a href="#"><img src="../assets/logoHD.svg" alt="Tile expert logo"></a>
+        <nav id="mainNavigation">
+            <a href="">Ссылки</a>
+            <a href="">Контакты</a>
+            <a href="">Теги</a>
+            <a href="">Проьбы</a>
+            <a href="">Избранное</a>
+            <a href="">Посещения</a>
+        </nav>
+        <span id="search" (click)="showSearchBar()" isVisible="isSearchBarVisible"></span>
+        <app-search></app-search>
+        <span id="addSmth"></span>
+    </div>
+    <div id="accountMenu">
+        <span id="messages"></span>
+        <span id="notifications"></span>
+        <app-account-menu></app-account-menu>
+    </div>
+</header>

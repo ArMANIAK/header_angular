@@ -1,0 +1,12 @@
+span {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin: 16px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#userAccount {
+    background-image: url('../../assets/add_circle.svg');
+}
